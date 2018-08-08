@@ -1,6 +1,8 @@
 package Test;
 
 
+import java.util.ArrayList;
+
 public class Professor {
    private int age;
    private String name;
@@ -26,14 +28,16 @@ public class Professor {
         this.name = name;
     }
 
-    public Students checkingStudents(Students s) {
-        if(s.isMissDays()) {
-            System.out.println(s.getName() + " miss!");
+    public ArrayList<Students> checkingStudents(ArrayList<Students> check) {//метод с помощью которогго профессор делает перекличку
+        for (Students students : check) {
+            if (students.isMissDays()) {
+                System.out.println(students.getName() + " is missing today!");
+            }
+            else {
+                System.out.println(students.getName() + " is here!");
+            }
         }
-        else {
-            System.out.println(s.getName() + " here!");
-        }
-        return s;
+        return check;
     }
 }
 
