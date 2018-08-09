@@ -36,3 +36,17 @@ public class Prog {
     }
 
 }
+  /*
+Given an integer array. Move first k elements to the array end.
+Input
+{array length} {k}
+{array values}
+Output
+{rotated array}
+Example
+Input
+5 2
+5 6 1 2 6
+Output
+1 2 6 5 6
+*/
