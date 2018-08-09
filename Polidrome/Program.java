@@ -27,3 +27,17 @@ public class Program {
         }
     }
 }
+/*
+Given a string, detect if it is a palindrome.
+        * Palindrome is a sequence of chars which reads the same backward or forward.
+        Format
+        Input
+        {string}
+        Output
+        {is palindrome | isn't palindrome}
+        Example
+        Input
+        madam
+        Output
+        is palindrome
+*/
